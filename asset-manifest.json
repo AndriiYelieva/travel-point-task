@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/travel-point-task/static/css/main.ac709a12.css",
+    "main.js": "/travel-point-task/static/js/main.01b0ce17.js",
+    "static/js/787.1cea8234.chunk.js": "/travel-point-task/static/js/787.1cea8234.chunk.js",
+    "index.html": "/travel-point-task/index.html",
+    "main.ac709a12.css.map": "/travel-point-task/static/css/main.ac709a12.css.map",
+    "main.01b0ce17.js.map": "/travel-point-task/static/js/main.01b0ce17.js.map",
+    "787.1cea8234.chunk.js.map": "/travel-point-task/static/js/787.1cea8234.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ac709a12.css",
+    "static/js/main.01b0ce17.js"
+  ]
+}
