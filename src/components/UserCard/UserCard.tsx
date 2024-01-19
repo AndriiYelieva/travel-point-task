@@ -13,7 +13,7 @@ export const UserCard: React.FC<Props> = ({ user }) => {
     <li className="user">
       <p className="user__name" > {user.name}</p >
       <Link
-        to={`/user/${user.id}`}
+        to={`/travel-point-task/user/${user.id}`}
         className="user__link"
       >
         Details
