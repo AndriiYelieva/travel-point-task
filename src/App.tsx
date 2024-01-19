@@ -1,11 +1,11 @@
+import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
-import './App.scss';
-import React from 'react';
 import { UserList } from './components/UserList';
 import { UserDetails } from './components/UserDetails';
+import './App.scss';
 
-const App = () => {
+export const App = () => {
   return (
     <BrowserRouter>
       <Routes>
@@ -16,4 +16,4 @@ const App = () => {
   );
 };
 
-export default App;
+
