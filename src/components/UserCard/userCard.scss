@@ -1,0 +1,21 @@
+.user {
+  display: flex;
+  justify-content: space-between;
+
+  padding: 5px;
+  margin-bottom: 8px;
+
+  border: 2px solid #000;
+  border-radius: 5px;
+
+  &__name {
+    color: #D0D3D4;
+    margin-right: 20px;
+  }
+
+  &__link {
+    &:hover {
+      color: #F1C40F;
+    }
+  }
+}

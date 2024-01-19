@@ -1,0 +1,50 @@
+.details {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  &__title {
+    margin: 0 auto 20px;
+    color: #fff;
+  }
+  
+
+  &__back {
+    width: 80px;
+    cursor: pointer;
+
+    margin: 0 0 20px 50px;
+
+    border: none;
+    border-radius: 5px;
+
+    &:hover {
+      color: #1C2833;
+      background: #F1C40F;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  &__link {
+    display: block;
+  }
+
+  &__info {
+    color: #fff;
+  }
+
+  &__error {
+    color: #fff;
+    margin: 0 auto;
+  }
+}
+
+a {
+  &:hover {
+    color: #F1C40F;
+  }
+}

@@ -1,0 +1,14 @@
+.users {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  &__title {
+    margin: 0 auto 20px;
+    color: #fff;
+  }
+
+  &__list {
+    margin: 0 auto;
+  }
+}
