@@ -1,15 +1,19 @@
 import React, { useEffect, useState } from 'react';
-import { useNavigate, useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import axios from 'axios';
 import { User } from '../../Types/User';
 
 import './userDetails.scss';
 
+jest.mock('axios');
+
 export const UserDetails = () => {
-  const navigator = useNavigate();
   const { userId } = useParams();
   const [user, setUser] = useState<User | null>(null);
-
+  const handleGoBack = () => {
+    window.history.back();
+  };
+  
   useEffect(() => {
     const fetchUserDetails = async () => {
       try {
@@ -23,10 +27,6 @@ export const UserDetails = () => {
     fetchUserDetails();
   }, [userId]);
 
-  const handleGoBack = () => {
-    navigator(-1);
-  };
-
   return (
     <main className="details">
       <h1 className="details__title">User details</h1>
@@ -39,7 +39,7 @@ export const UserDetails = () => {
             Back
           </button>
           <div className="details__wrapper">
-            <div className="details__info">
+            <div className="details__info" date-test="personallyInfo">
               Personally info:
               <p>Name: {user.name}</p>
               <a

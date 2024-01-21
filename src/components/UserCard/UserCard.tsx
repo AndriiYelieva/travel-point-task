@@ -10,7 +10,7 @@ type Props = {
 
 export const UserCard: React.FC<Props> = ({ user }) => {
   return (
-    <li className="user">
+    <li className="user" data-testid="user-item">
       <p className="user__name" > {user.name}</p >
       <Link
         to={`/travel-point-task/user/${user.id}`}
